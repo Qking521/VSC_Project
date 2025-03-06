@@ -1,0 +1,71 @@
+{
+    "http.proxySupport": "on",
+    "http.proxy":"http://127.0.0.1:10809", //这里是科学软件的代理域名和端口
+    "http.proxtStrictSSL": "false",
+    "http.proxyAuthorization": null,
+
+    "files.associations": {
+        "ostream": "cpp",
+        "iostream": "cpp",
+        "string_view": "cpp",
+        "new": "cpp",
+        "iosfwd": "cpp",
+        "typeinfo": "c",
+        "array": "cpp",
+        "atomic": "cpp",
+        "bit": "cpp",
+        "*.tcc": "cpp",
+        "cctype": "cpp",
+        "clocale": "cpp",
+        "cmath": "cpp",
+        "compare": "cpp",
+        "concepts": "cpp",
+        "cstddef": "cpp",
+        "cstdint": "cpp",
+        "cstdio": "cpp",
+        "cstdlib": "cpp",
+        "cwchar": "cpp",
+        "cwctype": "cpp",
+        "deque": "cpp",
+        "string": "cpp",
+        "unordered_map": "cpp",
+        "vector": "cpp",
+        "exception": "cpp",
+        "algorithm": "cpp",
+        "functional": "cpp",
+        "iterator": "cpp",
+        "memory": "cpp",
+        "memory_resource": "cpp",
+        "numeric": "cpp",
+        "optional": "cpp",
+        "random": "cpp",
+        "system_error": "cpp",
+        "tuple": "cpp",
+        "type_traits": "cpp",
+        "utility": "cpp",
+        "initializer_list": "cpp",
+        "istream": "cpp",
+        "limits": "cpp",
+        "numbers": "cpp",
+        "stdexcept": "cpp",
+        "streambuf": "cpp",
+        "mystring.h": "c",
+        "stdlib.h": "c"
+    },
+    "C_Cpp.errorSquiggles": "disabled",
+
+    "i18n-ally.localesPaths": ["i18nally"], // 配置文件的路径
+    // 如下须要手动配置
+    "i18n-ally.machineTranslation.enabled": true,
+    "i18n-ally.translate.engines": ["deepl", "google-cn", "google"],
+    "i18n-ally.keystyle": "flat", // 翻译路径格式 (翻译后变量格式 nested：嵌套式  flat:扁平式),flat({"a.b.c": "..."}) or nested({"a": {"b": {"c": "..."}}}
+    "i18n-ally.sortKeys": true,
+    "i18n-ally.namespace": true,
+    "i18n-ally.pathMatcher": "{locale}.json",  //locale对应国际化语言
+    "i18n-ally.enabledParsers": ["ts","js","json"], // 翻译文件可允许的格式，默认json
+    "i18n-ally.sourceLanguage": "en", // 翻译源语言 (源文件) 根据此语言文件翻译其他语言文件的变量和内容
+    "i18n-ally.displayLanguage": "zh-CN", // 显示语言 (显示文件/翻译文件)
+    "i18n-ally.enabledFrameworks": ["vue"],
+    "i18n-ally.encoding": "utf-8",
+    "i18n-ally.extract.autoDetect": true // 翻译文件的编码
+}

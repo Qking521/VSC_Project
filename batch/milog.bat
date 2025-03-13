@@ -15,6 +15,12 @@ set TARGET_LOG=%TARGET_DIR%log\offlinelog\tmp.log
 :: Clean existing directory if exists
 if exist "%USER_DIR%" (rd /s /q "%USER_DIR%")
 
+:: upload log from watch device to phone
+adb shell am broadcast -a com.xiaomi.fitness.debug.PULL
+
+:: wait 15s
+timeout /t 15 >nul
+
 :: Pull files from Android device
 adb pull /sdcard/Android/data/com.mi.health/files/ .
 
